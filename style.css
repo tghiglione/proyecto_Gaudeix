@@ -32,76 +32,80 @@ main{
     width: 150px;
     height: 150px;
 }
-header{
+.header{
     grid-area: cabecera;
-    background-image: linear-gradient(to right, #2D4B73, #253C59, #99B4BF, #D9B70D, #BF8D30);
-    /* background-color:#99B4BF; */ 
-    width:100%;
-    height: fit-content;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
 }
 
-.barraNavegacion_lista{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin:10px;
+#navbarNav{
+    justify-content: flex-end;
 }
-.barraNavegacion_lista li{
-    padding:10px;
-    margin:10px;
+.navbar{
+    height: fit-content;
+    background-image: linear-gradient(to right, #253C59, #99B4BF);
+}
+.nav-item{
     font-size: 20px;
-    font-weight: 300;
+    font-weight:bold ;
+    font-family: 'Spectral', serif; 
+    transition: transform 1s;
+    margin:10px;
 }
-.barraNavegacion_lista li a{
-    color:#253C59;
-    font-family: 'Spectral', serif;
+.nav-link{
+    color: #253C59;
 }
-.active:hover{ 
-     /* color:#BF8D30;  */
-} 
-.barraNavegacion_lista li:hover{
+.nav-item:hover{
     transform: scale(1.2,1.2);
 }
-.barraNavegacion_lista li{
-    transition: transform 1s;
-}
-/* INDEX INDEX INDEX INDEX INDEX INDEX INDEX INDEX INDEX */
 
+/* INDEX INDEX INDEX INDEX INDEX INDEX INDEX INDEX INDEX */
 .presentacion{
-    background-image: url(imagenes/mujer_foto.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height:60vh;
-}
-.presentacion div{
+    background-color: #99B4BF; 
+    text-align: center;
     height: fit-content;
-    margin-left: 30px;
-} 
+    width: 100%;
+}
 .presentacion h1{
     font-size: 4.5em;
     font-weight: bold;
     color:#253C59;
-    padding:5px;
+    padding:10px;
     font-family: 'Spectral', serif;
+    margin: 0;
+    animation-name: entradaTitulo;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
 }
 .presentacion h2{
-    font-size: 2.2em;
+    font-size: 3em;
     font-weight: bold;
     color:#253C59;
-    padding:5px; 
+    padding:10px; 
     font-family: 'Spectral', serif;
+    margin: 0;
+    animation-name: entradaTitulo;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
 }
-a{
-    text-decoration:none;
-    width: fit-content;
-    height: fit-content;
+@keyframes entradaTitulo  {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
+.carousel-item{
+    height: 90vh;
+}
+.carousel-item img{
+    height: 100%;
+}
+
 .items{
     background-color: #253C59;
     width: 100%;
@@ -215,43 +219,20 @@ a{
 }
 
 /* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER  */
-footer{
+.footer{
     grid-area: pie;
-    background-image: linear-gradient(to right, #2D4B73, #253C59, #99B4BF, #D9B70D, #BF8D30);
-    /* background-color: #99B4BF; */
-    width:100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    flex-wrap: wrap;
-    align-items: center;
-}
-.principio{
-    width:33%; 
-    height: fit-content;
-}
-.medio{
-    width:33%;
-    height: fit-content; 
-}
-.final{
-    width:33%; 
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-}
-.principio img{
-    width: 50%;
-    height: 50%;
+    background-color: #99B4BF; 
+    padding: 20px;
 }
 
-.logosRedes{
-    list-style: none;
-    width: 100%;
+.principio img{
+    width: 150px;
+    height: 150px;
 } 
+.final{
+    display: flex;
+    justify-content: center;
+}
 .logosRedes li{
     display:inline-block;
     padding: 20px;
@@ -261,8 +242,7 @@ footer{
 }
 .navegacion{
     list-style: none;
-    text-align: center;
-    padding:10px;
+    text-align: center; 
 }
 .navegacion li{
     padding:10px;
@@ -299,20 +279,14 @@ textarea{
     resize: none;
 }
 .contactanos{
-    width: 70%;
     height: fit-content;
-    margin:auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
     border:5px solid rgba(37,60,89,1);
     border-radius: 10px;
+    justify-content: space-between;
 }
-.info_contacto{
-    width: 45%;
+.info_contacto{   
     color:#253C59;
     display: flex;
     flex-direction: column;
@@ -338,8 +312,7 @@ textarea{
     font-size: 18px;
     padding:5px;
 }
-.formulario{
-    width: 45%;
+.formulario{ 
     padding: 20px;
 }
 .formulario div{
@@ -354,14 +327,12 @@ textarea{
 
 /* QUIENES SOMOS QUIENES SOMOS QUIENES SOMOS QUIENES SOMOS QUIENES SOMOS QUIENES SOMOS QUIENES SOMOS */
 .info_empresa{
-    width: 70%;
     height: fit-content;
-    margin: auto;
     border:solid 1px;
     border-radius: 5px;
     border-color: #BF8D30;
     box-shadow: 0px 5px 11px 2px rgba(191,141,48,1);
-    margin-top:10px;
+    margin-top:10px; 
 }
 .info_empresa p{
     padding:10px;
@@ -375,17 +346,11 @@ textarea{
     font-family: 'Spectral', serif;
 }
 .fundador{
-    width: 70%;
     height: fit-content;
-    margin:auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
     margin-top: 50px;
     margin-bottom: 50px;
-    align-items: center;
-}
+    justify-content: space-evenly;
+} 
 .fundador h2{
     padding:10px;
     font-size: 25px;
@@ -394,19 +359,23 @@ textarea{
     text-align: center;
 }
 .fundador_historia{
-    width: 45%;
     height:fit-content;
     padding:10px; 
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
 }
-.fundador_imagen img{
-    width: 50%;
-    height: 40vh;
+.fundador_historia p{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
 }
 .fundador_imagen{
-    width: 45%;
-    height:fit-content;
+    width: fit-content;
+    height: fit-content;
+}
+.fundador_imagen img{
+    height: 40vh;
 }
 .barra{
     width: 100%;
@@ -422,6 +391,8 @@ textarea{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
 }
 .barra_items li{
     padding:30px;
@@ -628,14 +599,7 @@ textarea{
     font-style: oblique;
 }
 .ofertas_principal{
-    width: 80%;
     height: fit-content;
-    margin:auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
     margin-top: 20px;
     margin-bottom: 20px; 
 }
@@ -643,24 +607,13 @@ textarea{
     font-family: 'Spectral', serif;
     color:#253C59;
     padding:10px;
-}
-.ofertas{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 100%;
-    height: fit-content;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    text-align: center;
 }
 .oferta1{
-    width: 48%;
     height: fit-content;
     text-align: center;
 }
 .oferta2{
-    width: 48%;
     height:fit-content;
     text-align: center;
 }
@@ -677,7 +630,7 @@ textarea{
     list-style: none;
 }
 
-.ofertas span{
+.ofertas_principal span{
     border:solid 1px;
     color:#BF8D30;
     border-radius: 5px;
@@ -695,48 +648,25 @@ textarea{
 }
 
 /* RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE */
-@media screen and (max-width:1024px){
-    header{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .presentacion{
-        height: 40vh;
-    }
-    .fundador_imagen img{
-        width: 80%;
-    }
-}
+
 @media screen and (max-width:768px){
-    footer{
-        background-color: #99B4BF;
-        width:100%;
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-        justify-content:space-between;
-        flex-wrap: nowrap;
-        align-items: center;
-    }
-   
-    .barraNavegacion_lista li{
-        font-size: 16px;
-    }
-    .presentacion{
-        height: 40vh;
+    .principio {
+        width: 150px;
+        margin: auto;
     }
     .presentacion h1{
-        font-size: 2.5em;
+        font-size: 3em;
     }
     .presentacion h2{
-        font-size: 1.5em;
+        font-size: 1,3em;
+    }
+    .carousel-item{
+        height: 60vh;
+    }
+    .fundador{
+        justify-content: center;
     }
     .paquetes_principal{
-        width: 90%;
-    }
-    .ofertas_principal{
         width: 90%;
     }
     .ofertas span{
@@ -772,9 +702,6 @@ textarea{
     .fotos_titulo{
         font-size: 30px;
     }
-    .fundador_imagen img{
-        width: 100%;
-    }
     .paquetes{
         display: flex;
         flex-direction: column;
@@ -790,6 +717,15 @@ textarea{
     }
 }
 @media screen and (max-width:550px){
+    .carousel-item{
+        height: 40vh;
+    }
+    .presentacion h1{
+        font-size: 28px;
+    }
+    .presentacion h2{
+        font-size: 18px;
+    }
     .items_lista{
         display: flex;
         flex-direction: column;
@@ -800,9 +736,6 @@ textarea{
     }
     .items_lista div{
         width:100%;
-    }
-    .presentacion{
-        height: 25vh;
     }
     .foto6{
         height: 35vh; 
@@ -827,34 +760,5 @@ textarea{
     }
     .foto9{
         height: 35vh;
-    }
-    .fundador{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-    }
-    .fundador_historia{
-        width: 100%;
-    }
-    .fundador_imagen{
-        width: 70%;
-        margin-top: 20px;
-    }
-    .info_empresa p{
-        font-size: 16px;
-    }
-    .contactanos{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-        align-items: center;
-    }
-    .info_contacto{
-        width: 100%;
-    }
-    .formulario{
-        width: 100%;
     }
 }
