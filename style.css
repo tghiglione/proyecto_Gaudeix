@@ -1,5 +1,6 @@
-/*titulos font-family: 'Spectral', serif; */
-/* textos font-family: 'Roboto', sans-serif; */
+/* parrafo: font-family: 'Spectral', serif; */
+/* titulos chicos: font-family: 'Roboto', sans-serif;
+   TITULOS: font-family: 'Fraunces', serif; */
 *{
     padding:0;
     margin:0;
@@ -18,7 +19,6 @@ body{
         "principal principal principal principal"
         "pie pie pie pie";
 }
-
 main{
     grid-area: principal;
 }
@@ -50,26 +50,26 @@ main{
     transition: transform 1s;
     margin:10px;
 }
-.nav-link{
-    color: #253C59;
-}
 .nav-item:hover{
     transform: scale(1.2,1.2);
+}
+.nav-link{
+    color: #253C59 !important;
 }
 
 /* INDEX INDEX INDEX INDEX INDEX INDEX INDEX INDEX INDEX */
 .presentacion{
-    background-color: #99B4BF; 
+    background-image: linear-gradient(to top, #99B4BF,#bf8d30e0); 
     text-align: center;
     height: fit-content;
     width: 100%;
 }
 .presentacion h1{
-    font-size: 4.5em;
+    font-size: 4em;
     font-weight: bold;
     color:#253C59;
     padding:10px;
-    font-family: 'Spectral', serif;
+    font-family: 'Fraunces', serif;
     margin: 0;
     animation-name: entradaTitulo;
     animation-duration: 1s;
@@ -77,11 +77,11 @@ main{
     animation-timing-function: linear;
 }
 .presentacion h2{
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bold;
     color:#253C59;
     padding:10px; 
-    font-family: 'Spectral', serif;
+    font-family: 'Fraunces', serif;
     margin: 0;
     animation-name: entradaTitulo;
     animation-duration: 1s;
@@ -118,7 +118,7 @@ main{
 }
 .items_encabezado h2{
     color:#BF8D30;
-    font-size: 45px;
+    font-size: 44px;
     font-weight:bold;
     padding:5px;
     font-family: 'Spectral', serif;
@@ -127,7 +127,7 @@ main{
 }
 .items_encabezado h3{
     color:#BF8D30;
-    font-size: 30px;
+    font-size: 28px;
     font-weight:bold;
     padding:5px;
     font-family: 'Spectral', serif;
@@ -185,7 +185,7 @@ main{
     margin:10px;
     padding: 5px;
     font-weight:bold;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Fraunces', serif;
     color:#BF8D30;
     font-size: 20px;
     font-style: oblique;
@@ -193,8 +193,8 @@ main{
 .items_lista p{
     margin:10px;
     padding: 5px;
-    font-size: 20px; 
-    font-family: 'Spectral', serif;
+    font-size: 18px; 
+    font-family: 'Roboto', sans-serif;
     color:white;
 }
 
@@ -204,7 +204,7 @@ main{
 }
 .barcelona h2{
     text-align: center;
-    font-size: 40px;
+    font-size: 44px;
     font-weight: bold;
     padding:10px;
     color:#253C59;
@@ -212,7 +212,7 @@ main{
 }
 .barcelona p{
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     margin:10px;
     padding:10px;
     font-family: 'Roboto', sans-serif; 
@@ -224,15 +224,27 @@ main{
     background-color: #99B4BF; 
     padding: 20px;
 }
+.footer_row{
+    justify-content: space-evenly;
+    align-content: center;
+}
+.principio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.final{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
 
 .principio img{
     width: 150px;
     height: 150px;
 } 
-.final{
-    display: flex;
-    justify-content: center;
-}
+
 .logosRedes li{
     display:inline-block;
     padding: 20px;
@@ -249,7 +261,7 @@ main{
 }
 .navegacion li a{
     color:#253C59;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
@@ -257,18 +269,19 @@ main{
 .navegacion li a:hover{
     color: #BF8D30;
 }
+.contacto{
+    list-style: none;
+    font-family: 'Spectral', serif;
+    color: #253C59;
+    text-align: center;
+}
 .contacto li{
     font-size: 18px;
     width: fit-content;
     padding-top: 10px;
-    color:#253C59;
+    text-align: center;
 }
-.contacto ul{
-    list-style: none;
-    font-size: 20px;
-    color:#253C59;
-    font-family: 'Spectral', serif;
-}
+
 .contacto span{
     text-decoration: underline;
     font-weight: bold;
@@ -295,12 +308,12 @@ textarea{
     padding: 20px;
 }
 .info_contacto h2{
-    font-size: 25px;
+    font-size: 28px;
     font-weight: bold;
     font-family: 'Spectral', serif;
 }
 .info_contacto p{
-    font-size: 20px;
+    font-size: 22px;
     font-family: 'Spectral', serif;
 }
 .info_contacto i{
@@ -309,7 +322,7 @@ textarea{
 }
 
 .info_contacto span{
-    font-size: 18px;
+    font-size: 16px;
     padding:5px;
 }
 .formulario{ 
@@ -317,7 +330,7 @@ textarea{
 }
 .formulario div{
     padding:10px; 
-    font-size: 18px;
+    font-size: 16px;
     color:#253C59;   
 }
 .ubicacion iframe{
@@ -336,11 +349,11 @@ textarea{
 }
 .info_empresa p{
     padding:10px;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Roboto', sans-serif;
 }
 .info_empresa span{
-    font-size: 25px;
+    font-size: 24px;
     font-weight: bold;
     color:#BF8D30;
     font-family: 'Spectral', serif;
@@ -353,7 +366,7 @@ textarea{
 } 
 .fundador h2{
     padding:10px;
-    font-size: 25px;
+    font-size: 24px;
     color:#BF8D30;
     font-family: 'Spectral', serif;
     text-align: center;
@@ -361,7 +374,7 @@ textarea{
 .fundador_historia{
     height:fit-content;
     padding:10px; 
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Roboto', sans-serif;
 }
 .fundador_historia p{
@@ -402,14 +415,14 @@ textarea{
     color:#BF8D30;
     font-size: 100px;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Spectral', serif;
 }
 .barra_items p{
     color:white;
     font-size: 20px;
     padding:5px;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Fraunces', serif;
 }
 /* GALERIA GALERIA GALERIA GALERIA GALERIA GALERIA GALERIA GALERIA GALERIA */
 
@@ -424,7 +437,7 @@ textarea{
     margin-top: 20px;
 }
 .fondo_galeria{
-    background-color:#99B4BF;
+    background-image: linear-gradient(to top,#99B4BF,#2D4B73,#253C59,#99B4BF);
 }
 
 .foto1:hover{
@@ -526,9 +539,9 @@ textarea{
     transition: all 2s;
     opacity:0.4;
 }
-.fotos_titulo{
+.fotos_titulo h2{
     color:#BF8D30;
-    font-size: 50px;
+    font-size: 60px;
     font-style:italic; 
     width: 80%;
     height: fit-content;
@@ -536,9 +549,10 @@ textarea{
     text-align: center;
     padding:20px;
     background-color: #253C59;
-    font-family: 'Spectral', serif;
+    font-family: 'Fraunces', serif; 
     border-radius: 10px;
     box-shadow: 0px 0px 29px 2px rgba(191,141,48,0.75);
+    margin-top: 20px;
 }
 .fotos img{
     width: 100%;
@@ -548,7 +562,6 @@ textarea{
 /* PAQUETES PAQUETES PAQUETES PAQUETES PAQUETES PAQUETES PAQUETES PAQUETES */
 
 .paquetes_principal{
-    width: 80%;
     height: fit-content;
     margin:auto;
     margin-top:10px;
@@ -556,23 +569,16 @@ textarea{
     border-radius: 5px;
     border-color: #253C59;
     box-shadow: 0px 5px 11px 2px rgba(37,60,89,1);
-    display:flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content:space-around;
 }
 .paquetes_principal h2{
-    align-self: center;
+    text-align: center;
     font-family: 'Spectral', serif;
     color:#253C59;
     padding: 10px;
     margin:10px;
 }
 .paquetes{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-evenly; 
     margin-bottom: 20px;
 }
 .paquete1{
@@ -585,8 +591,7 @@ textarea{
 }
 .paquete3{
     width:27%;
-    height:fit-content;
-    
+    height:fit-content; 
 } 
 .paquetes img{
     width: 100%;
@@ -594,7 +599,7 @@ textarea{
 }
 .paquetes p{
     margin-top:10px;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Roboto', sans-serif;
     font-style: oblique;
 }
@@ -635,12 +640,14 @@ textarea{
     color:#BF8D30;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 16px;
     padding:5px;
     margin:10px;
-    display: inline-block;
+    display: block;
+    font-family: 'Roboto', sans-serif;
 }
 .ofertas_principal p{
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
     width: 100%;
     padding:5px;
@@ -648,11 +655,27 @@ textarea{
 }
 
 /* RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE */
-
+@media screen and (max-width:991px){
+    .nav-item:hover{
+        transform: scale(1,1);
+    }
+    .nav-link{
+        color: #BF8D30 !important;
+    }
+}
 @media screen and (max-width:768px){
-    .principio {
-        width: 150px;
+    .footer_logo {
+        width: 110px;
         margin: auto;
+    }
+    .principio{
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    .contacto h2{
+        text-align: center;
+        margin-top: 10px;
     }
     .presentacion h1{
         font-size: 3em;
@@ -666,12 +689,7 @@ textarea{
     .fundador{
         justify-content: center;
     }
-    .paquetes_principal{
-        width: 90%;
-    }
-    .ofertas span{
-        display: block;
-    }
+    
     .foto6{
         grid-area: 4/1/5/3;
         height: 50vh; 
@@ -711,7 +729,7 @@ textarea{
     }
     .paquetes div{
         width: 70%;
-    }
+    }  
     .paquetes_principal h2{
         text-align: center;
     }
@@ -736,6 +754,9 @@ textarea{
     }
     .items_lista div{
         width:100%;
+    }
+    .fotos_titulo h2{
+        font-size: 30px;
     }
     .foto6{
         height: 35vh; 
