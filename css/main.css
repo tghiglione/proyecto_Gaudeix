@@ -1,0 +1,138 @@
+.presentacion {
+  background-image: linear-gradient(to top, #99B4BF, #bf8d30e0);
+  text-align: center;
+  height: fit-content;
+  width: 100%; }
+  .presentacion h1 {
+    font-size: 4em;
+    font-weight: bold;
+    color: #253C59;
+    padding: 10px;
+    font-family: "Fraunces", serif;
+    margin: 0;
+    animation-name: entradaTitulo;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: linear; }
+  .presentacion h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #253C59;
+    padding: 10px;
+    font-family: "Fraunces", serif;
+    margin: 0;
+    animation-name: entradaTitulo;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: linear; }
+
+@keyframes entradaTitulo {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+.carousel-item {
+  height: 90vh; }
+  .carousel-item img {
+    height: 100%; }
+
+.items {
+  background-color: #253C59;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: center; }
+  .items_encabezado h2 {
+    color: #BF8D30;
+    font-size: 44px;
+    font-weight: bold;
+    padding: 5px;
+    font-family: "Spectral", serif;
+    font-style: italic;
+    text-align: center; }
+  .items_encabezado h3 {
+    color: #BF8D30;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 5px;
+    font-family: "Spectral", serif;
+    font-style: italic;
+    text-align: center; }
+  .items_lista {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    margin-top: 20px; }
+    .items_lista .asesores {
+      width: 20vw;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      text-align: center; }
+    .items_lista .viaje {
+      width: 20vw;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      text-align: center; }
+    .items_lista .servicio {
+      width: 20vw;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      text-align: center; }
+    .items_lista .precio {
+      width: 20vw;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      text-align: center; }
+    .items_lista h2 {
+      margin: 10px;
+      padding: 5px;
+      font-weight: bold;
+      font-family: "Fraunces", serif;
+      color: #BF8D30;
+      font-size: 20px;
+      font-style: oblique; }
+    .items_lista p {
+      margin: 10px;
+      padding: 5px;
+      font-size: 18px;
+      font-family: "Roboto", sans-serif;
+      color: white; }
+
+.barcelona {
+  width: 100%;
+  height: fit-content; }
+  .barcelona h2 {
+    text-align: center;
+    font-size: 44px;
+    font-weight: bold;
+    padding: 10px;
+    color: #253C59;
+    font-family: "Spectral", serif; }
+  .barcelona p {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+    font-family: "Roboto", sans-serif; }
