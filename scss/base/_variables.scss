@@ -4,3 +4,21 @@ $color-amarillo: #BF8D30;
 $titulo: 'Fraunces', serif;
 $titulo-chico: 'Spectral', serif;
 $parrafo: 'Roboto', sans-serif;
+
+@mixin media-query($pantalla){
+    @if $pantalla==mobile{
+        @media only screen and (max-width:550px){
+            @content;
+        }
+    };
+    @if $pantalla==tablet{
+        @media only screen and (max-width:768px){
+            @content;
+        }
+    };
+    @if $pantalla==despliegueMenu{
+        @media only screen and (max-width:991px){
+            @content;
+        }
+    };
+}

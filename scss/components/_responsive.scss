@@ -24,19 +24,17 @@ main{
 .footer{
     grid-area: pie;
 }
-
-@media only screen and (max-width:991px){
-    .nav-item:hover{
+@include media-query(despliegueMenu){
+    .navbar .nav-item:hover{
         transform: scale(1,1);
     }
-    .nav-link{
+    .navbar .nav-item .nav-link{
         color: $color-amarillo !important;
     }
 }
-@media only screen and (max-width:768px){
+@include media-query(tablet){
     .footer_logo {
         width: 110px;
-        margin: auto;
     }
     .principio{
         text-align: center;
@@ -60,31 +58,31 @@ main{
         justify-content: center;
     }
     
-    .foto6{
+    .fotos .foto6{
         grid-area: 4/1/5/3;
         height: 50vh; 
     }
-    .foto7{
+    .fotos .foto7{
         grid-area: 5/1/6/2;
         height: 40vh;
     }
-    .foto8{
+    .fotos .foto8{
         grid-area: 5/2/6/3;
         height: 40vh;
     }
-    .foto2{
+    .fotos .foto2{
         height: 50vh;
     }
-    .foto3{
+    .fotos .foto3{
         height: 50vh;
     }
-    .foto4{
+    .fotos .foto4{
         height: 50vh;
     }
-    .foto5{
+    .fotos .foto5{
         height: 50vh;
     }
-    .foto9{
+    .fotos .foto9{
         height: 40vh;
     }
     .fotos_titulo{
@@ -97,14 +95,20 @@ main{
         justify-content: space-between;
         align-items: center;
     }
+    .paquetes_principal .paquetes .paquete1{
+        width: 70%;
+    }
+    .paquetes_principal .paquetes .paquete2{
+        width: 70%;
+    }
+    .paquetes_principal .paquetes .paquete3{
+        width: 70%;
+    } 
     .paquetes_principal h2{
         text-align: center;
     }
-    .paquetes div{
-        width: 70%;
-    }
 }
-@media only screen and (max-width:550px){
+@include media-query(mobile){
     .carousel-item{
         height: 40vh;
     }
@@ -122,34 +126,43 @@ main{
         height:fit-content;
         align-items: center;
     }
-    .items_lista div{
+    .items_lista .asesores{
+        width:100%;
+    }
+    .items_lista .viaje{
+        width:100%;
+    }
+    .items_lista .servicio{
+        width:100%;
+    }
+    .items_lista .precio{
         width:100%;
     }
     .fotos_titulo h2{
         font-size: 30px;
     }
-    .foto6{
+    .fotos .foto6{
         height: 35vh; 
     }
-    .foto7{
+    .fotos .foto7{
         height: 25vh;
     }
-    .foto8{
+    .fotos .foto8{
         height: 25vh;
     }
-    .foto2{
+    .fotos .foto2{
         height: 30vh;
     }
-    .foto3{
+    .fotos .foto3{
         height: 30vh;
     }
-    .foto4{
+    .fotos .foto4{
         height: 30vh;
     }
-    .foto5{
+    .fotos .foto5{
         height: 30vh;
     }
-    .foto9{
+    .fotos .foto9{
         height: 35vh;
     }
 }
