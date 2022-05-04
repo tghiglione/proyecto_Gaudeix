@@ -1,3 +1,26 @@
+.logo_gaudeix {
+  width: fit-content;
+  height: fit-content; }
+  .logo_gaudeix img {
+    width: 150px;
+    height: 150px; }
+
+.navbar {
+  height: fit-content;
+  background-image: linear-gradient(to right, #253C59, #99B4BF); }
+  .navbar #navbarNav {
+    justify-content: flex-end; }
+  .navbar .nav-item {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Spectral", serif;
+    transition: transform 1s;
+    margin: 10px; }
+    .navbar .nav-item:hover {
+      transform: scale(1.2, 1.2); }
+    .navbar .nav-item .nav-link {
+      color: #253C59 !important; }
+
 .presentacion {
   background-image: linear-gradient(to top, #99B4BF, #bf8d30e0);
   text-align: center;
@@ -136,3 +159,461 @@
     margin: 10px;
     padding: 10px;
     font-family: "Roboto", sans-serif; }
+
+.footer {
+  background-color: #99B4BF;
+  padding: 20px; }
+  .footer_row {
+    justify-content: space-evenly;
+    align-content: center; }
+  .footer .principio {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .footer .principio img {
+      width: 150px;
+      height: 150px; }
+  .footer .final {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center; }
+    .footer .final .contacto {
+      list-style: none;
+      font-family: "Spectral", serif;
+      color: #253C59;
+      text-align: center; }
+      .footer .final .contacto li {
+        font-size: 18px;
+        width: fit-content;
+        padding-top: 10px;
+        text-align: center; }
+      .footer .final .contacto span {
+        text-decoration: underline;
+        font-weight: bold; }
+    .footer .final .logosRedes li {
+      display: inline-block;
+      padding: 20px; }
+    .footer .final .logosRedes a {
+      color: #BF8D30; }
+  .footer .navegacion {
+    list-style: none;
+    text-align: center; }
+    .footer .navegacion li {
+      padding: 10px; }
+      .footer .navegacion li a {
+        color: #253C59;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        font-family: "Roboto", sans-serif; }
+        .footer .navegacion li a:hover {
+          color: #BF8D30; }
+
+.paquetes_principal {
+  height: fit-content;
+  margin: auto;
+  margin-top: 10px;
+  border: solid 1px;
+  border-radius: 5px;
+  border-color: #253C59;
+  box-shadow: 0px 5px 11px 2px #253C59; }
+  .paquetes_principal h2 {
+    text-align: center;
+    font-family: "Spectral", serif;
+    color: #253C59;
+    padding: 10px;
+    margin: 10px; }
+  .paquetes_principal .paquetes {
+    justify-content: space-evenly;
+    margin-bottom: 20px; }
+    .paquetes_principal .paquetes .paquete1 {
+      width: 27%;
+      height: fit-content; }
+    .paquetes_principal .paquetes .paquete2 {
+      width: 27%;
+      height: fit-content; }
+    .paquetes_principal .paquetes .paquete3 {
+      width: 27%;
+      height: fit-content; }
+    .paquetes_principal .paquetes img {
+      width: 100%;
+      height: 30vh; }
+    .paquetes_principal .paquetes p {
+      margin-top: 10px;
+      font-size: 16px;
+      font-family: "Roboto", sans-serif;
+      font-style: oblique; }
+
+.ofertas_principal {
+  height: fit-content;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  .ofertas_principal h2 {
+    font-family: "Spectral", serif;
+    color: #253C59;
+    padding: 10px;
+    text-align: center; }
+  .ofertas_principal span {
+    border: solid 1px;
+    color: #BF8D30;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+    margin: 10px;
+    display: block;
+    font-family: "Roboto", sans-serif; }
+  .ofertas_principal p {
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+    padding: 5px;
+    text-align: center; }
+  .ofertas_principal .oferta1 {
+    height: fit-content;
+    text-align: center; }
+    .ofertas_principal .oferta1_lista li {
+      font-size: 18px;
+      font-family: "Roboto", sans-serif;
+      padding: 10px;
+      list-style: none; }
+  .ofertas_principal .oferta2 {
+    height: fit-content;
+    text-align: center; }
+    .ofertas_principal .oferta2_lista li {
+      font-size: 18px;
+      font-family: "Roboto", sans-serif;
+      padding: 10px;
+      list-style: none; }
+
+.fondo_galeria {
+  background-image: linear-gradient(to top, #99B4BF, #253C59, #253C59, #99B4BF); }
+
+.fotos_titulo h2 {
+  color: #BF8D30;
+  font-size: 60px;
+  font-style: italic;
+  width: 80%;
+  height: fit-content;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #253C59;
+  font-family: "Fraunces", serif;
+  border-radius: 10px;
+  box-shadow: 0px 0px 29px 2px rgba(191, 141, 48, 0.75); }
+
+.fotos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, max-content);
+  column-gap: 20px;
+  row-gap: 20px;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px; }
+  .fotos img {
+    width: 100%;
+    height: 100%; }
+  .fotos .foto1 {
+    grid-area: 1/1/2/3;
+    box-shadow: 0px 0px 29px 2px rgba(191, 141, 48, 0.75);
+    transition: all 2s;
+    opacity: 0.4; }
+    .fotos .foto1:hover {
+      transform: scale(1.2, 1.2);
+      opacity: 1; }
+  .fotos .foto2 {
+    grid-area: 2/1/3/2;
+    box-shadow: 0px 0px 29px 2px rgba(191, 141, 48, 0.75);
+    height: 90vh;
+    transition: all 2s;
+    opacity: 0.4; }
+    .fotos .foto2:hover {
+      transform: scale(1.2, 1.2);
+      opacity: 1; }
+  .fotos .foto3 {
+    grid-area: 2/2/3/3;
+    box-shadow: 0px 0px 29px 2px rgba(191, 141, 48, 0.75);
+    height: 90vh;
+    transition: all 2s;
+    opacity: 0.4; }
+    .fotos .foto3:hover {
+      transform: scale(1.2, 1.2);
+      opacity: 1; }
+  .fotos .foto4 {
+    grid-area: 3/1/4/2;
+    box-shadow: 0px 0px 29px 2px rgba(191, 141, 48, 0.75);
+    height: 90vh;
+    transition: all 2s;
+    opacity: 0.4; }
+    .fotos .foto4:hover {
+      transform: scale(1.2, 1.2);
+      opacity: 1; }
+  .fotos .foto5 {
+    grid-area: 3/2/4/3;
+    box-shadow: 0px 0px 29px 2px rgba(191, 141, 48, 0.75);
+    height: 90vh;
+    transition: all 2s;
+    opacity: 0.4; }
+    .fotos .foto5:hover {
+      transform: scale(1.2, 1.2);
+      opacity: 1; }
+  .fotos .foto6 {
+    grid-area: 4/1/6/2;
+    box-shadow: 0px 0px 29px 2px rgba(191, 141, 48, 0.75);
+    height: 100vh;
+    transition: all 2s;
+    opacity: 0.4; }
+    .fotos .foto6:hover {
+      transform: scale(1.2, 1.2);
+      opacity: 1; }
+  .fotos .foto7 {
+    grid-area: 4/2/5/3;
+    box-shadow: 0px 0px 29px 2px rgba(191, 141, 48, 0.75);
+    height: 45vh;
+    transition: all 2s;
+    opacity: 0.4; }
+    .fotos .foto7:hover {
+      transform: scale(1.2, 1.2);
+      opacity: 1; }
+  .fotos .foto8 {
+    grid-area: 5/2/6/3;
+    box-shadow: 0px 0px 29px 2px rgba(191, 141, 48, 0.75);
+    height: 45vh;
+    transition: all 2s;
+    opacity: 0.4; }
+    .fotos .foto8:hover {
+      transform: scale(1.2, 1.2);
+      opacity: 1; }
+  .fotos .foto9 {
+    grid-area: 6/1/7/3;
+    height: 60vh;
+    box-shadow: 0px 0px 29px 2px rgba(191, 141, 48, 0.75);
+    transition: all 2s;
+    opacity: 0.4; }
+    .fotos .foto9:hover {
+      transform: scale(1.2, 1.2);
+      opacity: 1; }
+
+.info_empresa {
+  height: fit-content;
+  border: solid 1px;
+  border-radius: 5px;
+  border-color: #BF8D30;
+  box-shadow: 0px 5px 11px 2px #BF8D30;
+  margin-top: 10px; }
+  .info_empresa p {
+    padding: 10px;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif; }
+  .info_empresa span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #BF8D30;
+    font-family: "Spectral", serif; }
+
+.fundador {
+  height: fit-content;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: space-evenly; }
+  .fundador h2 {
+    padding: 10px;
+    font-size: 24px;
+    color: #BF8D30;
+    font-family: "Spectral", serif;
+    text-align: center; }
+  .fundador_historia {
+    height: fit-content;
+    padding: 10px;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif; }
+    .fundador_historia p {
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      margin-bottom: 10px; }
+  .fundador_imagen {
+    width: fit-content;
+    height: fit-content; }
+    .fundador_imagen img {
+      height: 40vh; }
+
+.barra {
+  width: 100%;
+  height: fit-content;
+  background-color: #253C59; }
+  .barra_items {
+    list-style: none;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0; }
+    .barra_items li {
+      padding: 30px;
+      margin: 5px; }
+    .barra_items h2 {
+      color: #BF8D30;
+      font-size: 100px;
+      text-align: center;
+      font-family: "Spectral", serif; }
+    .barra_items p {
+      color: white;
+      font-size: 20px;
+      padding: 5px;
+      text-align: center;
+      font-family: "Fraunces", serif; }
+
+.contactanos {
+  height: fit-content;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 5px solid #253C59;
+  border-radius: 10px;
+  justify-content: space-between; }
+  .contactanos .info_contacto {
+    color: #253C59;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    padding: 20px; }
+    .contactanos .info_contacto h2 {
+      font-size: 28px;
+      font-weight: bold;
+      font-family: "Spectral", serif; }
+    .contactanos .info_contacto p {
+      font-size: 22px;
+      font-family: "Spectral", serif; }
+    .contactanos .info_contacto i {
+      color: #BF8D30;
+      padding: 5px; }
+    .contactanos .info_contacto span {
+      font-size: 16px;
+      padding: 5px; }
+  .contactanos .formulario {
+    padding: 20px; }
+    .contactanos .formulario div {
+      padding: 10px;
+      font-size: 16px;
+      color: #253C59; }
+
+.ubicacion iframe {
+  width: 100%;
+  height: 50vh; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  display: grid;
+  grid-template-areas: "cabecera cabecera cabecera cabecera" "cabecera cabecera cabecera cabecera" "principal principal principal principal" "principal principal principal principal" "principal principal principal principal" "principal principal principal principal" "principal principal principal principal" "pie pie pie pie"; }
+
+main {
+  grid-area: principal; }
+
+.header {
+  grid-area: cabecera; }
+
+.footer {
+  grid-area: pie; }
+
+@media only screen and (max-width: 991px) {
+  .nav-item:hover {
+    transform: scale(1, 1); }
+  .nav-link {
+    color: #BF8D30 !important; } }
+
+@media only screen and (max-width: 768px) {
+  .footer_logo {
+    width: 110px;
+    margin: auto; }
+  .principio {
+    text-align: center;
+    font-size: 14px; }
+  .contacto h2 {
+    text-align: center;
+    margin-top: 10px; }
+  .presentacion h1 {
+    font-size: 3em; }
+  .presentacion h2 {
+    font-size: 1,3em; }
+  .carousel-item {
+    height: 60vh; }
+  .fundador {
+    justify-content: center; }
+  .foto6 {
+    grid-area: 4/1/5/3;
+    height: 50vh; }
+  .foto7 {
+    grid-area: 5/1/6/2;
+    height: 40vh; }
+  .foto8 {
+    grid-area: 5/2/6/3;
+    height: 40vh; }
+  .foto2 {
+    height: 50vh; }
+  .foto3 {
+    height: 50vh; }
+  .foto4 {
+    height: 50vh; }
+  .foto5 {
+    height: 50vh; }
+  .foto9 {
+    height: 40vh; }
+  .fotos_titulo {
+    font-size: 30px; }
+  .paquetes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center; }
+  .paquetes_principal h2 {
+    text-align: center; }
+  .paquetes div {
+    width: 70%; } }
+
+@media only screen and (max-width: 550px) {
+  .carousel-item {
+    height: 40vh; }
+  .presentacion h1 {
+    font-size: 28px; }
+  .presentacion h2 {
+    font-size: 18px; }
+  .items_lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    height: fit-content;
+    align-items: center; }
+  .items_lista div {
+    width: 100%; }
+  .fotos_titulo h2 {
+    font-size: 30px; }
+  .foto6 {
+    height: 35vh; }
+  .foto7 {
+    height: 25vh; }
+  .foto8 {
+    height: 25vh; }
+  .foto2 {
+    height: 30vh; }
+  .foto3 {
+    height: 30vh; }
+  .foto4 {
+    height: 30vh; }
+  .foto5 {
+    height: 30vh; }
+  .foto9 {
+    height: 35vh; } }

@@ -1,0 +1,28 @@
+.logo_gaudeix{
+    width: fit-content;
+    height: fit-content;
+    & img{
+        width: 150px;
+        height: 150px;
+    }
+}
+.navbar{
+    height: fit-content;
+    background-image: linear-gradient(to right, $color-azul, $color-celeste);
+    #navbarNav{
+        justify-content: flex-end;
+    }
+    .nav-item{
+        font-size: 20px;
+        font-weight:bold ;
+        font-family: $titulo-chico; 
+        transition: transform 1s;
+        margin:10px;
+        &:hover{
+            transform: scale(1.2,1.2);
+        }
+        .nav-link{
+            color: $color-azul !important;
+        }
+    }
+}

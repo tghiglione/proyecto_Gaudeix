@@ -1,0 +1,155 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-areas:
+        "cabecera cabecera cabecera cabecera"
+        "cabecera cabecera cabecera cabecera"
+        "principal principal principal principal"
+        "principal principal principal principal"
+        "principal principal principal principal"
+        "principal principal principal principal"
+        "principal principal principal principal"
+        "pie pie pie pie";
+}
+main{
+    grid-area: principal;
+}
+.header{
+    grid-area: cabecera;
+}
+.footer{
+    grid-area: pie;
+}
+
+@media only screen and (max-width:991px){
+    .nav-item:hover{
+        transform: scale(1,1);
+    }
+    .nav-link{
+        color: $color-amarillo !important;
+    }
+}
+@media only screen and (max-width:768px){
+    .footer_logo {
+        width: 110px;
+        margin: auto;
+    }
+    .principio{
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    .contacto h2{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .presentacion h1{
+        font-size: 3em;
+    }
+    .presentacion h2{
+        font-size: 1,3em;
+    }
+    .carousel-item{
+        height: 60vh;
+    }
+    .fundador{
+        justify-content: center;
+    }
+    
+    .foto6{
+        grid-area: 4/1/5/3;
+        height: 50vh; 
+    }
+    .foto7{
+        grid-area: 5/1/6/2;
+        height: 40vh;
+    }
+    .foto8{
+        grid-area: 5/2/6/3;
+        height: 40vh;
+    }
+    .foto2{
+        height: 50vh;
+    }
+    .foto3{
+        height: 50vh;
+    }
+    .foto4{
+        height: 50vh;
+    }
+    .foto5{
+        height: 50vh;
+    }
+    .foto9{
+        height: 40vh;
+    }
+    .fotos_titulo{
+        font-size: 30px;
+    }
+    .paquetes{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .paquetes_principal h2{
+        text-align: center;
+    }
+    .paquetes div{
+        width: 70%;
+    }
+}
+@media only screen and (max-width:550px){
+    .carousel-item{
+        height: 40vh;
+    }
+    .presentacion h1{
+        font-size: 28px;
+    }
+    .presentacion h2{
+        font-size: 18px;
+    }
+    .items_lista{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        flex-wrap: nowrap;
+        height:fit-content;
+        align-items: center;
+    }
+    .items_lista div{
+        width:100%;
+    }
+    .fotos_titulo h2{
+        font-size: 30px;
+    }
+    .foto6{
+        height: 35vh; 
+    }
+    .foto7{
+        height: 25vh;
+    }
+    .foto8{
+        height: 25vh;
+    }
+    .foto2{
+        height: 30vh;
+    }
+    .foto3{
+        height: 30vh;
+    }
+    .foto4{
+        height: 30vh;
+    }
+    .foto5{
+        height: 30vh;
+    }
+    .foto9{
+        height: 35vh;
+    }
+}

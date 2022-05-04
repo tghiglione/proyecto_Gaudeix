@@ -1,0 +1,85 @@
+.info_empresa{
+    height: fit-content;
+    border:solid 1px;
+    border-radius: 5px;
+    border-color: $color-amarillo;
+    box-shadow: 0px 5px 11px 2px $color-amarillo;
+    margin-top:10px;
+    & p{
+        padding:10px;
+        font-size: 18px;
+        font-family: $parrafo;
+    }
+    & span{
+        font-size: 24px;
+        font-weight: bold;
+        color:$color-amarillo;
+        font-family: $titulo-chico;
+    } 
+}
+.fundador{
+    height: fit-content;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: space-evenly;
+    & h2{
+        padding:10px;
+        font-size: 24px;
+        color:$color-amarillo;
+        font-family: $titulo-chico;
+        text-align: center;
+    }
+    &_historia{
+        height:fit-content;
+        padding:10px; 
+        font-size: 18px;
+        font-family: $parrafo;
+        & p{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    }
+    &_imagen{
+        width: fit-content;
+        height: fit-content;
+        & img{
+            height: 40vh;
+        }
+    }
+}
+.barra{
+    width: 100%;
+    height:fit-content;
+    background-color: $color-azul;
+    &_items{
+        list-style: none;
+        align-items: center;
+        width: 100%;
+        height:fit-content;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 0;
+        & li{
+            padding:30px;
+            margin:5px;
+        }
+        & h2{
+            color: $color-amarillo;
+            font-size: 100px;
+            text-align: center;
+            font-family: $titulo-chico;
+        }
+        & p{
+            color:white;
+            font-size: 20px;
+            padding:5px;
+            text-align: center;
+            font-family: $titulo;
+        }
+    }
+} 
