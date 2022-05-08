@@ -4,29 +4,21 @@
     margin-top:10px;
     border:solid 1px;
     border-radius: 5px;
-    border-color: $color-azul;
-    box-shadow: 0px 5px 11px 2px $color-azul;
+    border-color: map-get($colores,color-azul);
+    box-shadow: 0px 5px 11px 2px map-get($colores,color-azul);
     & h2{
         text-align: center;
         font-family: $titulo-chico;
-        color:$color-azul;
+        color:map-get($colores,color-azul);
         padding: 10px;
         margin:10px;
     }
     .paquetes{
         justify-content: space-evenly; 
         margin-bottom: 20px;
-        .paquete1{
+        &_lista{
             width:27%;
             height:fit-content;
-        }
-        .paquete2{
-            width:27%;
-            height: fit-content;
-        }
-        .paquete3{
-            width:27%;
-            height:fit-content; 
         }
         & img{
             width: 100%;
@@ -46,13 +38,13 @@
     margin-bottom: 20px;
     & h2{
         font-family: $titulo-chico;
-        color:$color-azul;
+        color:map-get($colores,color-azul);
         padding:10px;
         text-align: center;
     }
     & span{
         border:solid 1px;
-        color:$color-amarillo;
+        color:map-get($colores,color-amarillo);
         border-radius: 5px;
         font-weight: bold;
         font-size: 16px;
@@ -67,8 +59,9 @@
         width: 100%;
         padding:5px;
         text-align: center;
+        font-family: $parrafo;
     }
-    .oferta1{
+    .ofertas{
         height: fit-content;
         text-align: center;
         &_lista li{
@@ -78,14 +71,4 @@
             list-style: none;
         }
     }
-    .oferta2{
-        height:fit-content;
-        text-align: center;
-        &_lista li{
-            font-size: 18px;
-            font-family: $parrafo;
-            padding:10px;
-            list-style: none;
-        }
-    } 
 }

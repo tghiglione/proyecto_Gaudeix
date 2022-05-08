@@ -8,7 +8,7 @@
 }
 .navbar{
     height: fit-content;
-    background-image: linear-gradient(to right, $color-azul, $color-celeste);
+    background-image: linear-gradient(to right, map-get($colores,color-azul), map-get($colores,color-celeste));
     #navbarNav{
         justify-content: flex-end;
     }
@@ -22,7 +22,7 @@
             transform: scale(1.2,1.2);
         }
         .nav-link{
-            color: $color-azul !important;
+            color: map-get($colores,color-azul) !important;
         }
     }
 }

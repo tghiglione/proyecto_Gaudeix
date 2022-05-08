@@ -29,7 +29,7 @@ main{
         transform: scale(1,1);
     }
     .navbar .nav-item .nav-link{
-        color: $color-amarillo !important;
+        color: map-get($colores,color-amarillo) !important;
     }
 }
 @include media-query(tablet){
@@ -95,15 +95,9 @@ main{
         justify-content: space-between;
         align-items: center;
     }
-    .paquetes_principal .paquetes .paquete1{
+    .paquetes_principal .paquetes .paquetes_lista{
         width: 70%;
     }
-    .paquetes_principal .paquetes .paquete2{
-        width: 70%;
-    }
-    .paquetes_principal .paquetes .paquete3{
-        width: 70%;
-    } 
     .paquetes_principal h2{
         text-align: center;
     }
@@ -118,6 +112,12 @@ main{
     .presentacion h2{
         font-size: 18px;
     }
+    .items_encabezado h2{
+        font-size: 28px;
+    }
+    .items_encabezado h3{
+        font-size: 18px;
+    }
     .items_lista{
         display: flex;
         flex-direction: column;
@@ -126,16 +126,7 @@ main{
         height:fit-content;
         align-items: center;
     }
-    .items_lista .asesores{
-        width:100%;
-    }
-    .items_lista .viaje{
-        width:100%;
-    }
-    .items_lista .servicio{
-        width:100%;
-    }
-    .items_lista .precio{
+    .items_lista_objetos{
         width:100%;
     }
     .fotos_titulo h2{

@@ -1,9 +1,10 @@
-$color-azul: #253C59;
-$color-celeste: #99B4BF;
-$color-amarillo: #BF8D30;
+/* VARIABLES */
+
 $titulo: 'Fraunces', serif;
 $titulo-chico: 'Spectral', serif;
 $parrafo: 'Roboto', sans-serif;
+
+/* MIXIN */
 
 @mixin media-query($pantalla){
     @if $pantalla==mobile{
@@ -22,3 +23,21 @@ $parrafo: 'Roboto', sans-serif;
         }
     };
 }
+
+/* MAP */
+
+$colores:(
+    color-azul: #253C59,
+    color-celeste: #99B4BF,
+    color-amarillo: #BF8D30,
+);
+
+/* EXTEND */
+
+%flex-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+};
+
+

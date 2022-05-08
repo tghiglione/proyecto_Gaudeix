@@ -2,11 +2,11 @@
     height: fit-content;
     margin-top: 20px;
     margin-bottom: 20px;
-    border:5px solid $color-azul;
+    border:5px solid map-get($colores,color-azul);
     border-radius: 10px;
     justify-content: space-between;
     .info_contacto{   
-        color: $color-azul;
+        color: map-get($colores,color-azul);
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -22,7 +22,7 @@
             font-family: $titulo-chico;
         }
         & i{
-            color: $color-amarillo;
+            color: map-get($colores,color-amarillo);
             padding: 5px;
         }
         & span{
@@ -35,7 +35,7 @@
         & div{
             padding:10px; 
             font-size: 16px;
-            color:$color-azul;   
+            color:map-get($colores,color-azul);  
         }
     }
 }

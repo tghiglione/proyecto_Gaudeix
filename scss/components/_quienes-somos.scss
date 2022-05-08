@@ -2,8 +2,8 @@
     height: fit-content;
     border:solid 1px;
     border-radius: 5px;
-    border-color: $color-amarillo;
-    box-shadow: 0px 5px 11px 2px $color-amarillo;
+    border-color: map-get($colores,color-amarillo);
+    box-shadow: 0px 5px 11px 2px map-get($colores,color-amarillo);
     margin-top:10px;
     & p{
         padding:10px;
@@ -13,7 +13,7 @@
     & span{
         font-size: 24px;
         font-weight: bold;
-        color:$color-amarillo;
+        color:map-get($colores,color-amarillo);
         font-family: $titulo-chico;
     } 
 }
@@ -25,7 +25,7 @@
     & h2{
         padding:10px;
         font-size: 24px;
-        color:$color-amarillo;
+        color:map-get($colores,color-amarillo);
         font-family: $titulo-chico;
         text-align: center;
     }
@@ -52,7 +52,7 @@
 .barra{
     width: 100%;
     height:fit-content;
-    background-color: $color-azul;
+    background-color: map-get($colores,color-azul);
     &_items{
         list-style: none;
         align-items: center;
@@ -69,7 +69,7 @@
             margin:5px;
         }
         & h2{
-            color: $color-amarillo;
+            color: map-get($colores,color-amarillo);
             font-size: 100px;
             text-align: center;
             font-family: $titulo-chico;

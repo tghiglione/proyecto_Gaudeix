@@ -1,12 +1,12 @@
 .presentacion{
-    background-image: linear-gradient(to top, $color-celeste,#bf8d30e0); 
+    background-image: linear-gradient(to top, map-get($colores,color-celeste),#bf8d30e0); 
     text-align: center;
     height: fit-content;
     width: 100%;
     & h1{
         font-size: 4em;
         font-weight: bold;
-        color: $color-azul;
+        color: map-get($colores,color-azul);
         padding:10px;
         font-family: $titulo;
         margin: 0;
@@ -16,16 +16,8 @@
         animation-timing-function: linear;
     }
     & h2{
+        @extend h1;
         font-size: 2.5em;
-        font-weight: bold;
-        color: $color-azul;
-        padding:10px; 
-        font-family: $titulo;
-        margin: 0;
-        animation-name: entradaTitulo;
-        animation-duration: 1s;
-        animation-delay: 0s;
-        animation-timing-function: linear;
     }
 }
 @keyframes entradaTitulo  {
@@ -46,31 +38,25 @@
     }
 }
 .items{
-    background-color: $color-azul;
+    background-color: map-get($colores,color-azul);
     width: 100%;
     height: fit-content;
-    display: flex;
-    flex-direction: column;
+    @extend %flex-column;
     justify-content:space-around;
-    flex-wrap: nowrap;
-    align-items: center;
+    flex-wrap: nowrap; 
     &_encabezado h2{
-        color: $color-amarillo;
+        color: map-get($colores,color-amarillo);
         font-size: 44px;
         font-weight:bold;
         padding:5px;
+        margin-top: 10px;
         font-family: $titulo-chico;
         font-style: italic;
         text-align: center;
     }
     &_encabezado h3{
-        color: $color-amarillo;
+        @extend h2;
         font-size: 28px;
-        font-weight:bold;
-        padding:5px;
-        font-family: $titulo-chico;
-        font-style: italic;
-        text-align: center;
     }
     &_lista{
         list-style: none;
@@ -81,48 +67,19 @@
         width: 100%;
         height:fit-content;
         margin-top: 20px;
-        .asesores{
+        &_objetos{
             width:20vw;
             height: fit-content;
-            display: flex;
-            flex-direction: column;
+            @extend %flex-column;
             flex-wrap: nowrap;
-            align-items:center ;
             text-align: center;
-        }
-        .viaje{
-            width:20vw;
-            height: fit-content;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            align-items:center ;
-            text-align: center;
-        }
-        .servicio{
-            width:20vw;
-            height: fit-content;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            align-items:center ;
-            text-align: center;
-        }
-        .precio{
-            width:20vw;
-            height: fit-content;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            align-items:center ;
-            text-align: center;    
         }
         & h2{
             margin:10px;
             padding: 5px;
             font-weight:bold;
             font-family: $titulo;
-            color: $color-amarillo;
+            color: map-get($colores,color-amarillo);
             font-size: 20px;
             font-style: oblique;
         }
@@ -143,7 +100,7 @@
         font-size: 44px;
         font-weight: bold;
         padding:10px;
-        color:$color-azul;
+        color:map-get($colores,color-azul);
         font-family: $titulo-chico;
     }
     & p{
