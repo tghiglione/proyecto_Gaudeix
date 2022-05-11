@@ -140,7 +140,8 @@
       list-style: none;
       font-family: "Spectral", serif;
       color: #253C59;
-      text-align: center; }
+      text-align: center;
+      font-size: 28px; }
       .footer .final .contacto li {
         font-size: 18px;
         width: fit-content;
@@ -437,7 +438,7 @@ main {
   .principio {
     text-align: center;
     font-size: 14px; }
-  .contacto h2, .contacto .items_encabezado h3, .items_encabezado .contacto h3 {
+  .contacto {
     text-align: center;
     margin-top: 10px; }
   .presentacion h1, .presentacion h2, .presentacion .items_encabezado h3, .items_encabezado .presentacion h3 {
@@ -518,3 +519,20 @@ main {
     height: 30vh; }
   .fotos .foto9 {
     height: 35vh; } }
+
+.error {
+  height: fit-content;
+  width: auto;
+  margin: 20px;
+  padding: 20px; }
+  .error h2, .error .items_encabezado h3, .items_encabezado .error h3 {
+    text-align: center;
+    font-style: "Roboto", sans-serif;
+    font-size: 200px;
+    font-weight: bold;
+    padding: 20px; }
+  .error p {
+    text-align: center;
+    font-style: "Roboto", sans-serif;
+    font-size: 24px;
+    padding: 10px; }

@@ -20,6 +20,7 @@
             font-family: $titulo-chico;
             color: map-get($colores,color-azul);
             text-align: center;
+            font-size:28px;
             & li{
                 font-size: 18px;
                 width: fit-content;
