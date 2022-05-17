@@ -29,30 +29,27 @@ main{
         transform: scale(1,1);
     }
     .navbar .nav-item .nav-link{
-        color: map-get($colores,color-amarillo) !important;
+        color: map-get($colores,color-azul) !important;
     }
 }
 @include media-query(tablet){
-    .footer_logo {
-        width: 110px;
-    }
     .principio{
-        text-align: center;
         font-size: 14px;
     }
-    
     .contacto{
-        text-align: center;
         margin-top: 10px;
     }
     .presentacion h1{
-        font-size: 3em;
+        font-size: 48px;
     }
     .presentacion h2{
-        font-size: 1,3em;
+        font-size: 28px;
     }
     .carousel-item{
         height: 60vh;
+    }
+    .barcelona h2{
+        font-size: 28px;
     }
     .fundador{
         justify-content: center;
@@ -103,20 +100,23 @@ main{
     }
 }
 @include media-query(mobile){
-    .carousel-item{
-        height: 40vh;
+    .carousel{
+        margin:0;
+        &-item{
+            height: 40vh;
+        }
     }
     .presentacion h1{
-        font-size: 28px;
+        font-size: 30px;
     }
     .presentacion h2{
-        font-size: 18px;
+        font-size: 22px;
     }
     .items_encabezado h2{
         font-size: 28px;
     }
     .items_encabezado h3{
-        font-size: 18px;
+        font-size: 22px;
     }
     .items_lista{
         display: flex;

@@ -8,7 +8,7 @@
 }
 .navbar{
     height: fit-content;
-    background-image: linear-gradient(to right, map-get($colores,color-azul), map-get($colores,color-celeste));
+    background-image: linear-gradient(to bottom, map-get($colores,color-azul), map-get($colores,color-celeste));
     #navbarNav{
         justify-content: flex-end;
     }

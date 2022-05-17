@@ -16,7 +16,7 @@
 
 .navbar {
   height: fit-content;
-  background-image: linear-gradient(to right, #253C59, #99B4BF); }
+  background-image: linear-gradient(to bottom, #253C59, #99B4BF); }
   .navbar #navbarNav {
     justify-content: flex-end; }
   .navbar .nav-item {
@@ -30,14 +30,19 @@
     .navbar .nav-item .nav-link {
       color: #253C59 !important; }
 
+.main {
+  background-color: #253C59; }
+
 .presentacion {
-  background-image: linear-gradient(to top, #99B4BF, #bf8d30e0);
+  /* background-image: linear-gradient(to top, map-get($colores,color-celeste),#bf8d30e0); */
+  background-image: linear-gradient(to top, #253C59, #99B4BF);
   text-align: center;
   height: fit-content;
   width: 100%; }
   .presentacion h1, .presentacion h2, .presentacion .items_encabezado h3, .items_encabezado .presentacion h3 {
     font-size: 4em;
     font-weight: bold;
+    /* color: map-get($colores,color-azul); */
     color: #253C59;
     padding: 10px;
     font-family: "Fraunces", serif;
@@ -47,6 +52,7 @@
     animation-delay: 0s;
     animation-timing-function: linear; }
   .presentacion h2, .presentacion .items_encabezado h3, .items_encabezado .presentacion h3 {
+    color: #BF8D30;
     font-size: 2.5em; }
 
 @keyframes entradaTitulo {
@@ -57,10 +63,13 @@
     opacity: 1;
     transform: translateX(0); } }
 
-.carousel-item {
-  height: 90vh; }
-  .carousel-item img {
-    height: 100%; }
+.carousel {
+  padding: 0;
+  margin-top: 30px; }
+  .carousel-item {
+    height: 70vh; }
+    .carousel-item img {
+      height: 100%; }
 
 .items {
   background-color: #253C59;
@@ -110,19 +119,21 @@
 
 .barcelona {
   width: 100%;
-  height: fit-content; }
+  height: fit-content;
+  background-color: white; }
   .barcelona h2, .barcelona .items_encabezado h3, .items_encabezado .barcelona h3 {
     text-align: center;
     font-size: 44px;
     font-weight: bold;
     padding: 10px;
+    margin: 0;
     color: #253C59;
     font-family: "Spectral", serif; }
   .barcelona p {
     text-align: center;
     font-size: 18px;
-    margin: 10px;
-    padding: 10px;
+    margin: 0;
+    padding: 20px;
     font-family: "Roboto", sans-serif; }
 
 .footer {
@@ -135,18 +146,18 @@
     width: 150px;
     height: 150px; }
   .footer .final {
-    flex-wrap: nowrap; }
+    flex-wrap: nowrap;
+    font-family: "Spectral", serif;
+    color: #253C59;
+    font-size: 28px; }
     .footer .final .contacto {
-      list-style: none;
-      font-family: "Spectral", serif;
-      color: #253C59;
-      text-align: center;
-      font-size: 28px; }
+      list-style: none; }
       .footer .final .contacto li {
         font-size: 18px;
         width: fit-content;
         padding-top: 10px;
-        text-align: center; }
+        text-align: start;
+        padding-left: 0; }
       .footer .final .contacto span {
         text-decoration: underline;
         font-weight: bold; }
@@ -157,7 +168,8 @@
       color: #BF8D30; }
   .footer .navegacion {
     list-style: none;
-    text-align: center; }
+    text-align: center;
+    padding-left: 0; }
     .footer .navegacion li {
       padding: 10px; }
       .footer .navegacion li a {
@@ -227,6 +239,8 @@
   .ofertas_principal .ofertas {
     height: fit-content;
     text-align: center; }
+    .ofertas_principal .ofertas_lista {
+      padding: 0; }
     .ofertas_principal .ofertas_lista li {
       font-size: 18px;
       font-family: "Roboto", sans-serif;
@@ -430,23 +444,21 @@ main {
   .navbar .nav-item:hover {
     transform: scale(1, 1); }
   .navbar .nav-item .nav-link {
-    color: #BF8D30 !important; } }
+    color: #253C59 !important; } }
 
 @media only screen and (max-width: 768px) {
-  .footer_logo {
-    width: 110px; }
   .principio {
-    text-align: center;
     font-size: 14px; }
   .contacto {
-    text-align: center;
     margin-top: 10px; }
   .presentacion h1, .presentacion h2, .presentacion .items_encabezado h3, .items_encabezado .presentacion h3 {
-    font-size: 3em; }
+    font-size: 48px; }
   .presentacion h2, .presentacion .items_encabezado h3, .items_encabezado .presentacion h3 {
-    font-size: 1,3em; }
+    font-size: 28px; }
   .carousel-item {
     height: 60vh; }
+  .barcelona h2, .barcelona .items_encabezado h3, .items_encabezado .barcelona h3 {
+    font-size: 28px; }
   .fundador {
     justify-content: center; }
   .fotos .foto6 {
@@ -482,16 +494,18 @@ main {
     text-align: center; } }
 
 @media only screen and (max-width: 550px) {
-  .carousel-item {
-    height: 40vh; }
+  .carousel {
+    margin: 0; }
+    .carousel-item {
+      height: 40vh; }
   .presentacion h1, .presentacion h2, .presentacion .items_encabezado h3, .items_encabezado .presentacion h3 {
-    font-size: 28px; }
+    font-size: 30px; }
   .presentacion h2, .presentacion .items_encabezado h3, .items_encabezado .presentacion h3 {
-    font-size: 18px; }
+    font-size: 22px; }
   .items_encabezado h2, .items_encabezado h3 {
     font-size: 28px; }
   .items_encabezado h3 {
-    font-size: 18px; }
+    font-size: 22px; }
   .items_lista {
     display: flex;
     flex-direction: column;

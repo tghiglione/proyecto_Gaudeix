@@ -64,6 +64,9 @@
     .ofertas{
         height: fit-content;
         text-align: center;
+        &_lista{
+            padding:0;
+        }
         &_lista li{
             font-size: 18px;
             font-family: $parrafo;

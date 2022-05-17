@@ -15,17 +15,17 @@
     .final{
         @extend %flex-column;
         flex-wrap: nowrap;
+        font-family: $titulo-chico;
+        color: map-get($colores,color-azul);
+        font-size:28px;
         .contacto{
             list-style: none;
-            font-family: $titulo-chico;
-            color: map-get($colores,color-azul);
-            text-align: center;
-            font-size:28px;
             & li{
                 font-size: 18px;
                 width: fit-content;
                 padding-top: 10px;
-                text-align: center;
+                text-align:start;
+                padding-left: 0;
             }
             & span{
                 text-decoration: underline;
@@ -43,6 +43,7 @@
     .navegacion{
         list-style: none;
         text-align: center;
+        padding-left: 0;
         & li{
             padding:10px;
             & a{

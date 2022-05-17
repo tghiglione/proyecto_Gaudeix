@@ -1,12 +1,17 @@
+.main{
+    background-color: map-get($colores,color-azul);
+}
 .presentacion{
-    background-image: linear-gradient(to top, map-get($colores,color-celeste),#bf8d30e0); 
+    /* background-image: linear-gradient(to top, map-get($colores,color-celeste),#bf8d30e0); */ 
+    background-image: linear-gradient(to top, map-get($colores,color-azul),map-get($colores,color-celeste));
     text-align: center;
     height: fit-content;
     width: 100%;
     & h1{
         font-size: 4em;
         font-weight: bold;
-        color: map-get($colores,color-azul);
+        /* color: map-get($colores,color-azul); */
+        color:map-get($colores,color-azul);
         padding:10px;
         font-family: $titulo;
         margin: 0;
@@ -17,6 +22,7 @@
     }
     & h2{
         @extend h1;
+        color: map-get($colores, color-amarillo);
         font-size: 2.5em;
     }
 }
@@ -31,10 +37,14 @@
 		transform: translateX(0);
 	}
 }
-.carousel-item{
-    height: 90vh;
-    & img{
+.carousel{
+    padding:0;
+    margin-top: 30px;
+    &-item{
+        height: 70vh;
+        & img{
         height: 100%;
+        }
     }
 }
 .items{
@@ -95,19 +105,21 @@
 .barcelona{
     width: 100%;
     height: fit-content;
+    background-color: white;
     & h2{
         text-align: center;
         font-size: 44px;
         font-weight: bold;
         padding:10px;
+        margin:0;
         color:map-get($colores,color-azul);
         font-family: $titulo-chico;
     }
     & p{
         text-align: center;
         font-size: 18px;
-        margin:10px;
-        padding:10px;
+        margin:0;
+        padding:20px;
         font-family: $parrafo; 
     }
 }
